@@ -70,12 +70,12 @@ public class Car {
 
     public double getRange() {
         // Return the estimated amount of miles the car can drive based on current gas remaining and MPG (provided to constructor)
-        return cv_mpg/cv_currentGasLevel;
+        return cv_mpg * cv_currentGasLevel;
     }
 
     public String toString() {
         // Return a string representation of the car's current state.
         // Be sure to include range, model, and gas level.
-        return cv_range + ", " + cv_model + ", " + cv_currentGasLevel;
+        return getRange() + ", " + cv_model + ", " + cv_currentGasLevel;
      }
 }
