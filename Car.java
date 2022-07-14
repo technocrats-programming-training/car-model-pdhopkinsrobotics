@@ -55,7 +55,7 @@ public class Car {
 
     public void drive(double distance) {
         // drive for distance (in miles), and update gas tank level accordingly (using mpg)
-        
+        cv_currentGasLevel = cv_currentGasLevel - distance/cv_mpg;
     }
 
     public void refuel(double gasAmount) {
